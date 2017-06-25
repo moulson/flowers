@@ -1,0 +1,149 @@
+html{
+	body{
+		font-family: 'museo-sans';
+		padding-top: 70px;
+		.home-text{
+			text-align: center;
+			margin-top: 40px;
+			margin-bottom: 40px;
+			font-size: 16px;
+			color: #555;
+		}
+		nav{
+			background-color: #fff;
+			box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+			div{
+				ul{
+					li{
+						a{
+							color: #000;
+						}
+						a:hover{
+							color: #000;
+						}
+					}
+				}
+			}
+		}
+		.link-box{
+			padding-right: 15px;
+			padding-left: 15px;
+			a{
+				img{
+					margin: auto;
+					opacity: 0.85;
+					transition: opacity 0.2s;
+				}
+				img:hover{
+					opacity: 1;
+					transition: opacity 0.2s;
+				}
+				
+				.pic-text{
+					padding: 5px 0;
+					color: #fff;
+					background-color: rgba(0,0,0,0.8);
+					position: absolute;
+					bottom:0;
+					left: 15px;
+					right: 15px;
+					text-align: center;
+					font-size: 16px;
+
+					@media(screen and min-width:1200px){
+						left: 45px;
+						right: 45px;
+					}
+				}
+			}
+		}
+		.navbar-brand{
+			color: $black;
+		}
+	}
+}
+.placeholder-fill{
+	width: 100%;
+}
+.header-image-row{
+	width: 100%;
+}
+.sale-boxes{
+	margin-top: 40px;
+	.sale-box-cont{
+		.sale-box-text{
+			min-height: 400px;
+			background-color: $grey;
+			h1{
+				text-align: center;
+				font-size: 1.5em;
+			}
+			p{
+				font-size: 1.3em;
+				text-align: justify;
+				margin-bottom: 40px;
+			}
+		}
+		.sale-box-img{
+			height: 400px;
+		}
+		.cut-flowers{
+			background: url('../images/cut_flowers.jpg') center center / cover no-repeat;
+		}
+		.garden-lovers{
+			background: url('../images/garden_lovers.jpg') center center / cover no-repeat;
+		}
+		.bereavement{
+			background: url('../images/bereavement.jpg') center center / cover no-repeat;
+		}
+		.gift-bouquets{
+			background: url('../images/gift_bouquets.jpg') center center / cover no-repeat;
+		}
+		.wedding-event-flowers{
+			background: url('../images/wedding_and_event_flowers.jpg') center center / cover no-repeat;
+		}
+		.flowers-for-florists{
+			background: url('../images/flowers_for_florists.jpg') center center / cover no-repeat;
+		}
+	}
+}
+.footer{
+	margin-top: 40px;
+	p{
+		position:absolute;
+		right: 0;
+		bottom:0;
+	}
+}
+.about-text-1{
+	padding: 10px 20px;
+	h1{
+		text-align:center;
+	}
+	.first-p{
+		font-weight: bold;
+		color: #4a4a4a;
+	}
+	p{
+		margin-top: 10px;
+		font-size: 18px;
+	}
+}
+.about-images{
+	margin-top: 30px;
+	.fl{
+		float: left;
+	}
+	.fr{
+		float: right;
+	}
+	img{
+		margin: auto;
+	}
+}
+.about-text-2{
+	margin-top: 20px;
+	p{
+		font-size: 18px;
+	}
+}
