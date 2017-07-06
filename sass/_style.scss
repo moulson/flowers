@@ -161,6 +161,25 @@ html{
 		}
 	}
 }
+.wedding-text-1{
+	text-align: justify;
+	padding: 10px 20px;
+	margin: 20px 0;
+	h1{
+		text-align:center;
+	}
+	.first-p{
+		font-weight: bold;
+		color: #4a4a4a;
+	}
+	p{
+		margin-top: 10px;
+		font-size: 18px;
+	}
+	@media(screen and max-height: $small-screen){
+		text-align: justify;
+	}
+}
 .about-text-1{
 	padding: 10px 20px;
 	margin: 20px 0;
