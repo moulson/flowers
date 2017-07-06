@@ -42,6 +42,10 @@ module.exports = function(grunt) { // the general grunt function that is run
         files: ['dist/css/style.css'],
         tasks: ['cssmin']
       },
+      html:{
+        files: ['**/*.html'],
+        tasks: ['copy']
+      }
     }
   });
 
