@@ -41,6 +41,9 @@ html{
 			position: relative;
 			padding-right: 15px;
 			padding-left: 15px;
+			@media screen and (max-width: 767px){
+				margin-bottom: 40px;
+			}
 			a{
 				img{
 					margin: auto;
@@ -61,6 +64,19 @@ html{
 					bottom:0;
 					left: 15px;
 					right: 15px;
+					margin: auto;
+					@media screen and (min-width: 1199px){
+						width: 300px;
+					}
+					@media screen and (min-width: 991px) and (max-width: 1199px){
+						width: 293.33px;
+					}
+					@media screen and (min-width: 767px) and (max-width 990px){
+						width: 219.984px;
+					}
+					@media screen and (max-width: 767px){
+						width: 300px;
+					}
 				}
 			}
 		}
@@ -95,6 +111,9 @@ html{
 	@media(screen and max-width: $small-screen){
 		height: 250px;
 	}
+	@media screen and (min-width: 1199px){
+		height: 550px;
+	}
 }
 .sale-boxes{
 	margin-top: 40px;
@@ -104,7 +123,10 @@ html{
 			background-color: $grey;
 			h1{
 				text-align: center;
-				font-size: 1.5em;
+				font-size: 1.8em;
+				font-weight: bold;
+				padding-top: 20px;
+				text-transform: uppercase;
 			}
 			p{
 				font-size: 1.3em;
@@ -114,6 +136,9 @@ html{
 		}
 		.sale-box-img{
 			height: 400px;
+			@media(screen and max-width: 767px){
+				width: 100%;
+			}
 		}
 		.cut-flowers{
 			background: url('../images/garden_lovers.jpg') center center / cover no-repeat;
@@ -136,19 +161,20 @@ html{
 	img{
 		min-height: 37px;
 		min-width: 37px;
+		margin: auto;
 	}
 	margin-top: 40px;
 	margin-bottom: 0 !important;
 	border-radius: 0;
 	p{
 		position:absolute;
-		right: 0;
-		bottom:0;
+		bottom: -100px;
+		margin-left: -140px; 
 	}
 	@media(screen and max-width: $small-screen){
 		//Styling for mobiles
 		.social-cont{
-			margin: 0 15% !important;
+			margin: 0 8% !important;
 		}
 		img{
 			margin: auto;
@@ -235,5 +261,15 @@ html{
 		.cd.email{
 			margin-bottom: 20px;
 		}
+	}
+}
+.hidden-small{
+	@media(screen and min-width: 767px){
+		display: none;
+	}
+}
+.hidden-large{
+	@media(screen and max-height: 767px){
+		display: none;
 	}
 }
