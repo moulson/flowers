@@ -12,10 +12,10 @@ html{
 		font-family: 'museo-sans';
 		padding-top: 50px;
 		.home-text{
-			text-align: center;
+			text-align: justify;
 			margin-top: 40px;
 			margin-bottom: 40px;
-			font-size: 16px;
+			font-size: 18px !important;
 			color: #555;
 		}
 		.navbar-nav{
@@ -165,6 +165,13 @@ html{
 	}
 }
 .footer{
+	.social-row{
+		bottom: -50px;
+	}
+	.social{
+		max-height: 50px;
+		max-width: 50px;
+	}
 	img{
 		min-height: 37px;
 		min-width: 37px;
@@ -208,12 +215,14 @@ html{
 	p{
 		margin-top: 10px;
 		font-size: 18px;
+		color: #555;
 	}
 	@media(screen and max-height: $small-screen){
 		text-align: justify;
 	}
 }
 .about-text-1{
+
 	padding: 10px 20px;
 	margin: 20px 0;
 	h1{
@@ -226,6 +235,7 @@ html{
 	p{
 		margin-top: 10px;
 		font-size: 18px;
+		color: #555
 	}
 	@media(screen and max-height: $small-screen){
 		text-align: justify;
@@ -247,6 +257,7 @@ html{
 	margin: 20px 0;
 	p{
 		font-size: 18px;
+		color: #555;
 	}
 	@media(screen and max-width: $small-screen){
 		text-align: justify;
@@ -260,10 +271,11 @@ html{
 		margin-top: 20px;
 	}
 	.cr{
+
 		text-align: center;
 		font-size: 18px;
 		.cd{
-
+			margin: 10px;
 		}
 		.cd.email{
 			margin-bottom: 20px;
